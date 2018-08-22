@@ -1,0 +1,132 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home_slide
+		.owl-carousel.owl-theme
+			.item
+				img(src="./img/home_layer1.png", alt="")
+				.title
+					.container
+						.row
+							.col
+								h1 Chúng tôi là FullStack Việt Nam
+								p Repellat commodi quas fuga quam molestias beatae, ipsam, sit explicabo odio neque nobis ratione. Nulla voluptatibus nisi quam mollitia voluptates!
+			.item
+				img(src="./img/home_layer1.png", alt="")
+				.title
+					.container
+						.row
+							.col
+								h1 Chúng tôi là FullStack Việt Nam
+								p Repellat commodi quas fuga quam molestias beatae, ipsam, sit explicabo odio neque nobis ratione. Nulla voluptatibus nisi quam mollitia voluptates!
+			.item
+				img(src="./img/home_layer1.png", alt="")
+				.title
+					.container
+						.row
+							.col
+								h1 Chúng tôi là FullStack Việt Nam
+								p Repellat commodi quas fuga quam molestias beatae, ipsam, sit explicabo odio neque nobis ratione. Nulla voluptatibus nisi quam mollitia voluptates!
+			.item
+				img(src="./img/home_layer1.png", alt="")
+				.title
+					.container
+						.row
+							.col
+								h1 Chúng tôi là FullStack Việt Nam
+								p Repellat commodi quas fuga quam molestias beatae, ipsam, sit explicabo odio neque nobis ratione. Nulla voluptatibus nisi quam mollitia voluptates!
+			.item
+				img(src="./img/home_layer1.png", alt="")
+				.title
+					.container
+						.row
+							.col
+								h1 Chúng tôi là FullStack Việt Nam
+								p Repellat commodi quas fuga quam molestias beatae, ipsam, sit explicabo odio neque nobis ratione. Nulla voluptatibus nisi quam mollitia voluptates!
+	section.home_news
+		.container
+			.row.text-center.mt-5
+				.col.fullstack
+					span FullStack 
+					h2 Chuyên Nghiệp
+			.row
+				.col-md-4.item
+					a(href="#" title="")
+						figure
+							.blockimg
+								.conmat
+									i.fa.fa-eye
+								img(src="./img/home_new1.png", alt="")
+							figcaption
+								h3 Full Stack VN
+								time 17/08/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio necessitatibus soluta doloremque blanditiis esse commodi aliquam, iure ab rem fugit vel officiis, quas eos nisi ducimus veritatis culpa non!
+				.col-md-4.item
+					a(href="#" title="")
+						figure
+							.blockimg
+								.conmat
+									i.fa.fa-eye
+								img(src="./img/home_new3.png", alt="")
+							figcaption
+								h3 Full Stack VN
+								time 17/08/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio necessitatibus soluta doloremque blanditiis esse commodi aliquam, iure ab rem fugit vel officiis, quas eos nisi ducimus veritatis culpa non!
+				.col-md-4.item
+					a(href="#" title="")
+						figure
+							.blockimg
+								.conmat
+									i.fa.fa-eye
+								img(src="./img/home_new2.png", alt="")
+							figcaption
+								h3 Full Stack VN
+								time 17/08/2018
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio necessitatibus soluta doloremque blanditiis esse commodi aliquam, iure ab rem fugit vel officiis, quas eos nisi ducimus veritatis culpa non!
+	section.home_trademark
+		.container
+			.owl-carousel.owl-theme
+				.item
+					img(src="./img/home_trademark1.png", alt="")
+				.item
+					img(src="./img/home_trademark2.png", alt="")
+				.item
+					img(src="./img/home_trademark3.png", alt="")
+				.item
+					img(src="./img/home_trademark4.png", alt="")
+				.item
+					img(src="./img/home_trademark5.png", alt="")
+				.item
+					img(src="./img/home_trademark6.png", alt="")
+	section.home_links
+		.container
+			.row.pt-4.pb-4
+				.col-md-4.text-center.info
+					h4.mt-4.mb-4 Info Of FullStack
+					span Mobile: (+84) 969689893
+					br
+					span Email: admin@fullstackvietnam.com
+					br
+					span Địa chỉ: 28 đường số 2 - CITYLAND - Phường 7 - Gò Vấp - HCM
+				.col-md-4.text-center.info
+					h4.mt-4.mb-4 Links
+					ul
+						each val in ['Khóa Frontend Master','Khóa Học FullStack Developer','Khóa Design Chuyên Nghiệp','Lịch Khai Giảng','Đăng Ký Khóa Học']
+							li
+								i.fa.fa-arrow-right
+								a(href="")=val
+				.col-md-4.text-center.info
+					h4.mt-4.mb-4
+					br
+					br
+					ul
+						each val in ['Khóa Frontend Master','Khóa Học FullStack Developer','Khóa Design Chuyên Nghiệp','Lịch Khai Giảng','Đăng Ký Khóa Học']
+							li
+								i.fa.fa-arrow-right
+								a(href="")=val
+	
